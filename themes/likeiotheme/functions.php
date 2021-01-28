@@ -50,7 +50,8 @@ if ( ! function_exists( 'likeiotheme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'likeiotheme' ),
+				'menu-primary' => esc_html__( 'Primary', 'likeiotheme' ),
+				'menu-secondary' => esc_html__( 'Secondary', 'likeiotheme' ),
 			)
 		);
 
@@ -71,17 +72,6 @@ if ( ! function_exists( 'likeiotheme_setup' ) ) :
 			)
 		);
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'likeiotheme_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -124,8 +114,20 @@ add_action( 'after_setup_theme', 'likeiotheme_content_width', 0 );
 function likeiotheme_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'likeiotheme' ),
-			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Sidebar - Archive', 'likeiotheme' ),
+			'id'            => 'sidebar-archive',
+			'description'   => esc_html__( 'Add widgets here.', 'likeiotheme' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar - Single', 'likeiotheme' ),
+			'id'            => 'sidebar-single-post',
 			'description'   => esc_html__( 'Add widgets here.', 'likeiotheme' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
@@ -141,9 +143,6 @@ add_action( 'widgets_init', 'likeiotheme_widgets_init' );
  */
 function likeiotheme_scripts() {
 	wp_enqueue_style( 'likeiotheme-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'likeiotheme-style', 'rtl', 'replace' );
-
-	wp_enqueue_script( 'likeiotheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -151,10 +150,6 @@ function likeiotheme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'likeiotheme_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -171,10 +166,4 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
 
