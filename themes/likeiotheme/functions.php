@@ -166,4 +166,30 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+/**
+ * enqueue block editor assets
+ */
+function likeiotheme_enqueue_block_editor_assets(){
+	wp_enqueue_script(
+		'editor-script',
+		get_template_directory_uri() . '/assets/js/editor.js',
+		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' )
+	);
+}
+
+add_action( 'enqueue_block_editor_assets', 'likeiotheme_enqueue_block_editor_assets' );
+
+/**
+ * enqueue block assets
+ */
+
+function likeiotheme_enqueue_block_assets(){
+	wp_enqueue_style( 
+		'block-style', 
+		get_template_directory_uri() . '/assets/css/blocks.css'
+	);
+}
+
+add_action( 'enqueue_block_assets', 'likeiotheme_enqueue_block_assets' );
+
 
