@@ -13,6 +13,10 @@ wp.blocks.registerBlockStyle( 'core/paragraph', {
     label: 'Banner Hashtag'
 } );
 
+wp.blocks.registerBlockStyle( 'core/paragraph', {
+    name: 'product-label',
+    label: 'Product Label'
+} );
 
 wp.blocks.registerBlockStyle( 'core/image', {
     name: 'feature-banner-image',
@@ -49,15 +53,7 @@ wp.blocks.registerBlockStyle( 'core/group', {
     label: 'Footer Promotion Banner Group'
 } );
 
-wp.blocks.registerBlockStyle( 'core/button', {
-    name: 'add-to-cart-button',
-    label: 'Add To Cart Button'
-} );
 
-wp.blocks.registerBlockStyle( 'core/button', {
-    name: 'shop-now-button',
-    label: 'Shop Now Button'
-} );
 
 wp.blocks.registerBlockStyle( 'core/group', {
     name: 'single-shop-group',
@@ -74,10 +70,16 @@ wp.blocks.registerBlockStyle( 'core/group', {
     label: 'Call To Action Group'
 } );
 
-wp.blocks.registerBlockStyle( 'core/paragraph', {
-    name: 'product-label',
-    label: 'Product Label'
+wp.blocks.registerBlockStyle( 'core/button', {
+    name: 'add-to-cart-button',
+    label: 'Add To Cart Button'
 } );
+
+wp.blocks.registerBlockStyle( 'core/button', {
+    name: 'shop-now-button',
+    label: 'Shop Now Button'
+} );
+
 
 wp.domReady( function() {
     wp.blocks.unregisterBlockStyle( 'core/quote', 'large' );
