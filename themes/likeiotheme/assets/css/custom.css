@@ -1,4 +1,25 @@
 header.entry-header {
     margin-left:2rem;
     margin-right:2rem;
+    text-align: center;
 }
+
+.main-navigation ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-navigation ul li a{
+    color:black;
+    font-size:20px;
+}
+
+.menu-primary-menu-container {
+    width:100%;
+}
+
+
+footer .site-info a, footer .site-info>div{
+    text-align: center;
+}
+

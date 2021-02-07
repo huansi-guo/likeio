@@ -77,6 +77,89 @@ if ( ! function_exists( 'likeiotheme_setup' ) ) :
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		/**
+		 * Add theme support for wp block styles.
+		 */
+		add_theme_support( 'wp-block-styles' );
+		
+		/**
+		 * Add theme support for custom color Palettes
+		 */
+		
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name' => __( 'black blue', 'likeiotheme' ),
+				'slug' => 'black-blue',
+				'color' => '#111111',
+			),
+			array(
+				'name' => __( 'vivid red', 'likeiotheme' ),
+				'slug' => 'vivid-red',
+				'color' => '#f64c3f',
+			),
+			array(
+				'name' => __( 'background light gray', 'likeiotheme' ),
+				'slug' => 'background-light-gray',
+				'color' => '#ededed',
+			),
+			
+			array(
+				'name' => __( 'very light gray', 'likeiotheme' ),
+				'slug' => 'very-light-gray',
+				'color' => '#8a8a8a',
+			),
+			array(
+				'name' => __( 'black', 'likeiotheme' ),
+				'slug' => 'black',
+				'color' => '#000',
+			),
+			array(
+				'name' => __( 'white', 'likeiotheme' ),
+				'slug' => 'white',
+				'color' => '#FFF',
+			)
+
+		) );
+
+		/**
+		 * add theme support for custom font size choice 
+		 */
+
+		add_theme_support( 'editor-font-sizes', array(
+			array(
+				'name' => __( 'Small', 'likeiothemeLangDomain' ),
+				'size' => 16,
+				'slug' => 'small'
+			),
+			array(
+				'name' => __( 'Regular', 'likeiothemeLangDomain' ),
+				'size' => 22,
+				'slug' => 'regular'
+			),
+			array(
+				'name' => __( 'Large', 'likeiothemeLangDomain' ),
+				'size' => 36,
+				'slug' => 'large'
+			),
+			array(
+				'name' => __( 'Huge', 'likeiothemeLangDomain' ),
+				'size' => 50,
+				'slug' => 'huge'
+			)
+		) );
+
+		/**
+		 * add theme support disable font size choice 
+		 */
+
+		add_theme_support('disable-custom-font-sizes');
+
+		/**
+		 * add theme support for disabling custom color choice 
+		 */ 
+		add_theme_support( 'disable-custom-colors' );
+		
+
+		/**
 		 * Add support for core custom logo.
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
