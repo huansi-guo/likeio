@@ -38,4 +38,10 @@ footer .site-info a, footer .site-info>div{
     align-items: center;
 }
 
+.wp-block-group.is-style-left-image-right-texts>.wp-block-group__inner-container>p {
+    line-height: 3;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 
