@@ -87,25 +87,25 @@ if ( ! function_exists( 'likeiotheme_setup' ) ) :
 		
 		add_theme_support( 'editor-color-palette', array(
 			array(
-				'name' => __( 'black blue', 'likeiotheme' ),
-				'slug' => 'black-blue',
-				'color' => '#111111',
+				'name' => __( 'Light Pink', 'likeiotheme' ),
+				'slug' => 'light-pink',
+				'color' => '#f8f2ec',
 			),
 			array(
-				'name' => __( 'vivid red', 'likeiotheme' ),
-				'slug' => 'vivid-red',
-				'color' => '#f64c3f',
+				'name' => __( 'Light Grey', 'likeiotheme' ),
+				'slug' => 'light-grey',
+				'color' => '#eaeaea ',
 			),
 			array(
-				'name' => __( 'background light gray', 'likeiotheme' ),
-				'slug' => 'background-light-gray',
-				'color' => '#ededed',
+				'name' => __( 'Yellow Orange', 'likeiotheme' ),
+				'slug' => 'yellow-orange',
+				'color' => '#ffdcba',
 			),
 			
 			array(
-				'name' => __( 'very light gray', 'likeiotheme' ),
-				'slug' => 'very-light-gray',
-				'color' => '#8a8a8a',
+				'name' => __( 'Pink Orange', 'likeiotheme' ),
+				'slug' => 'pink-orange',
+				'color' => '#fbeada',
 			),
 			array(
 				'name' => __( 'black', 'likeiotheme' ),
