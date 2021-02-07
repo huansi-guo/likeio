@@ -116,6 +116,11 @@ if ( ! function_exists( 'likeiotheme_setup' ) ) :
 				'name' => __( 'white', 'likeiotheme' ),
 				'slug' => 'white',
 				'color' => '#FFF',
+			),
+			array(
+				'name' => __( 'Grey Yellow', 'likeiotheme' ),
+				'slug' => 'grey-yellow',
+				'color' => '#dfddcd',
 			)
 
 		) );

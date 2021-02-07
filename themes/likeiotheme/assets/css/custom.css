@@ -23,3 +23,11 @@ footer .site-info a, footer .site-info>div{
     text-align: center;
 }
 
+.wp-block-group.is-style-feature-banner-color-texts {
+    background-color: #dfddcd;
+}
+
+.wp-block-image.is-style-feature-banner-image {
+    margin-top:0;
+}
+

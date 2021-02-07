@@ -46,7 +46,15 @@ wp.blocks.registerBlockStyle( 'core/group', {
     label: 'Feature Banner Texts'
 } );
 
+wp.blocks.registerBlockStyle( 'core/group', {
+    name: 'left-image-right-texts',
+    label: 'Left Image Right Texts'
+} );
 
+wp.blocks.registerBlockStyle( 'core/group', {
+    name: 'feature-banner-color-texts',
+    label: 'Feature Banner Color Texts'
+} );
 
 wp.blocks.registerBlockStyle( 'core/group', {
     name: 'footer-promotion-banner-group',
