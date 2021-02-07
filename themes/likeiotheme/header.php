@@ -25,8 +25,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'likeiotheme' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+	<header id="masthead" class="site-header grid-container grid-x">
+		<div class="site-branding navBar cell large-4 medium-4">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -45,7 +45,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation cell large-8 medium-8 grid-x align-middle">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'likeiotheme' ); ?></button>
 			<?php
 			wp_nav_menu(
