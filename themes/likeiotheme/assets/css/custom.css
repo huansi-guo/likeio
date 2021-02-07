@@ -30,4 +30,12 @@ footer .site-info a, footer .site-info>div{
 .wp-block-image.is-style-feature-banner-image {
     margin-top:0;
 }
+.wp-block-group.is-style-left-image-right-texts>.wp-block-group__inner-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+}
+
 
