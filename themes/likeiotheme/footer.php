@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer grid-x grid-container">
 		<div class="site-info cell grid-x">
 			<a class="cell" href="<?php echo esc_url( __( 'http://likeio.local/', 'likeiotheme' ) ); ?>">
-					<img style="width:20%;" src="./wp-content/themes/likeiotheme/assets/img/logo.png" alt="brand_logo">
+					<img style="width:20%;" src="http://likeio.local/wp-content/themes/likeiotheme/assets/img/logo.png" alt="brand_logo">
 				</a>
 			<a class="cell" href="<?php echo esc_url( __( 'https://wordpress.org/', 'likeiotheme' ) ); ?>">
 				<?php
