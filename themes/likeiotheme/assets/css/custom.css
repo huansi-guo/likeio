@@ -44,6 +44,7 @@ footer .site-info a, footer .site-info>div{
     padding-right: 2rem;
 }
 
+/*** styling for header ***/
 
 #site-navigation ul#primary-menu li a {
     color:#480711;
@@ -54,3 +55,17 @@ footer .site-info a, footer .site-info>div{
     text-decoration: underline;
 }
 
+/*** customize the structure and styling in home.php ***/
+.exerptSection {
+    padding-left: 2em;
+}
+
+h4.text-center.postTitle {
+    color:red;
+    font-size:1.5rem;
+    margin-top:0;
+}
+
+.exerptSection a {
+    text-decoration: none;
+}
