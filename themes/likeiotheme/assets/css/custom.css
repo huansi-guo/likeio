@@ -79,3 +79,9 @@ h4.text-center.postTitle {
 .exerptSection a {
     text-decoration: none;
 }
+
+/*** styling single product page ***/
+
+.center-aligned {
+    text-align: center;
+}
