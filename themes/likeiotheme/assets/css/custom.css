@@ -44,9 +44,9 @@ footer .site-info a, footer .site-info>div{
     padding-right: 2rem;
 }
 
-/* a {
+a {
     color: #480711 !important;
-} */
+}
 /*** styling for header ***/
 
 #site-navigation ul#primary-menu li a {
