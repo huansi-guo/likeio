@@ -31,7 +31,7 @@ get_header();
 					</div>
 			</aside> 
 
-			<div class="cell large-9 medium-9 small-12">
+			<div class="cell large-9 medium-9 small-12" style="padding-left:2em;">
 				<h2 style="text-align:center; margin-top:-1em; margin-bottom:1em;">Likeio Selections</h2>
 				<?php
 				while ( have_posts() ) :
