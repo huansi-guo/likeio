@@ -57,3 +57,9 @@ input.search-submit {
     /* width:30%; */
     /* border-radius: 0.8rem; */
 }
+
+#secondary.widget-area ul{
+    margin:0;
+    padding-left: 0;
+    list-style:none;
+}

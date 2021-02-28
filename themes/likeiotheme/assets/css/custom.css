@@ -89,3 +89,12 @@ h4.text-center.postTitle {
 .center-aligned {
     text-align: center;
 }
+
+h2.woocommerce-loop-product__title {
+    color:black;
+}
+
+.woocommerce ul.products li.product .price {
+    font-weight: bolder;
+    color:#480711;
+}
