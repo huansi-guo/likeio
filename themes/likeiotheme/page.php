@@ -9,29 +9,47 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Likeio_Theme
+ * @package E-commerce_Theme
  */
 
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div id="primary" class="content-area grid-container">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+		<main id="main" class="site-main grid-x">
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<aside class="cell large-3 medium-3">
+				<?php
+					if ( ! is_active_sidebar( 'sidebar-archive' ) ) {
+						return;
+					}
+					?>
+					<div id="secondary" class="widget-area">
+						<?php dynamic_sidebar( 'sidebar-archive' ); ?>
+					</div>
+			</aside> 
 
-		endwhile; // End of the loop.
-		?>
+			<div class="cell large-9 medium-9 small-12">
+				<h2 style="text-align:center; margin-top:-1em; margin-bottom:1em;">Likeio Selections</h2>
+				<?php
+				while ( have_posts() ) :
+					the_post();
 
-	</main><!-- #main -->
+					get_template_part( 'template-parts/content', 'page' );
+
+					// If comments are open or we have at least one comment, load up the comment template.
+					// if ( comments_open() || get_comments_number() ) :
+					// 	comments_template();
+					// endif;
+
+				endwhile; // End of the loop.
+				?>
+			</div>	
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
 // get_sidebar();

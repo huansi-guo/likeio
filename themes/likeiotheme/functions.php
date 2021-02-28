@@ -248,6 +248,13 @@ function likeiotheme_scripts() {
 		array()
 	);
 
+	// Enqueue sidebar style ********************************************
+	wp_enqueue_style(
+		'sidebar-style',
+		get_stylesheet_directory_uri() . '/assets/css/sidebar.css',
+		array()
+	);
+
 	// Enqueue what input js
 	wp_enqueue_script ( 'likeiotheme-what-input', get_template_directory_uri() .'/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 
