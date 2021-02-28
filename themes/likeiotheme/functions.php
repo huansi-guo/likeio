@@ -255,6 +255,14 @@ function likeiotheme_scripts() {
 		array()
 	);
 
+
+	// Enqueue shop single style ********************************************
+	wp_enqueue_style(
+		'shopSingle-style',
+		get_stylesheet_directory_uri() . '/assets/css/shopSingle.css',
+		array()
+	);
+
 	// Enqueue what input js
 	wp_enqueue_script ( 'likeiotheme-what-input', get_template_directory_uri() .'/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 
