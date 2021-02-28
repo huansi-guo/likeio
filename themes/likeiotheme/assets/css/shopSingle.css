@@ -1,0 +1,13 @@
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color:#480711;
+    font-weight: bolder;
+}
+
+.page-content, .entry-content, .entry-summary {
+    margin-top:0;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color:#ffdcba !important;
+    color:black !important;
+}
