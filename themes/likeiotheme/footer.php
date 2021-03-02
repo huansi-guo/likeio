@@ -12,6 +12,16 @@
 ?>
 
 	<footer id="colophon" class="site-footer grid-x grid-container">
+			<nav id="footer-navigation" class="main-navigation cell large-12 medium-12 grid-x align-middle">
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'secondary',
+						'menu_id'        => 'secondary-menu',
+					) );
+					?>
+			</nav><!-- #footer-menu-navigation -->
+
 		<div class="site-info cell grid-x">
 			<a class="cell" href="<?php echo esc_url( __( 'http://likeio.local/', 'likeiotheme' ) ); ?>">
 					<img style="width:20%;" src="http://likeio.local/wp-content/themes/likeiotheme/assets/img/logo.png" alt="brand_logo">
