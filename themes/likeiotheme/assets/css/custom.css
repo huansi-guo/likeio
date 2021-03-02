@@ -119,4 +119,20 @@ h2.woocommerce-loop-product__title {
 .woocommerce-account .woocommerce-MyAccount-navigation > ul {
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    margin:0;
+    margin-top: 5rem;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation > ul > li>a {
+    color: black;
+    background-color: #99C7C1;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+    width:100%;
+    margin-top: 5rem;
+
 }
