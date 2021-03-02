@@ -58,6 +58,10 @@ a {
     display:none;
 }
 
+#main.contactPage {
+    display: flex;
+    justify-content: center;
+}
 /* .type-page .entry-header>h1.entry-title {
     display:none;
 } */
