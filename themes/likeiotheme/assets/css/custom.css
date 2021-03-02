@@ -65,6 +65,10 @@ footer .site-info a, footer .site-info>div{
     display: flex;
     justify-content: center;
 }
+
+header.grid-container {
+    max-width: 120rem;
+}
 /* .type-page .entry-header>h1.entry-title {
     display:none;
 } */
@@ -88,7 +92,15 @@ footer .site-info a, footer .site-info>div{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-bottom:2rem;
 }
+
+.main-navigation ul li a {
+    color: #374745;
+    font-weight: 500;
+    font-size: 20px;
+}
+
 
 /*** customize the structure and styling in home.php ***/
 .exerptSection {
