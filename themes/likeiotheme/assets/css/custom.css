@@ -57,8 +57,8 @@ footer .site-info a, footer .site-info>div{
 .type-post .post-thumbnail {
     display:none;
 }
-/* 
-.entry-header>h1.entry-title {
+
+/* .type-page .entry-header>h1.entry-title {
     display:none;
 } */
 
