@@ -69,7 +69,7 @@ a {
     display:none;
 } */
 
-/*** styling for footer ***/
+/******************************* styling for footer *****************************/
 
 .site-footer {
     margin-top: 3em;
@@ -78,6 +78,16 @@ a {
 
 #site-navigation ul#primary-menu li a:hover {
     text-decoration: underline;
+}
+
+#secondary-menu {
+    width: 100%;
+}
+
+#secondary-menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 /*** customize the structure and styling in home.php ***/
