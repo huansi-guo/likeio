@@ -54,9 +54,13 @@ footer .site-info a, footer .site-info>div{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.entry-header>h1.entry-title {
+.type-post .post-thumbnail {
     display:none;
 }
+/* 
+.entry-header>h1.entry-title {
+    display:none;
+} */
 
 /*** styling for footer ***/
 
