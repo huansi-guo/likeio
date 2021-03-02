@@ -350,19 +350,19 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
 
     
     #billing_city_field, #shipping_city_field {
-        width:32%;
+        width:100%;
         float:left;
         margin-right: 2%;
     }
     
     #billing_state_field, #shipping_state_field{
-        width:32%;
+        width:100%;
         float:left;
         margin-right: 2%;
     }
     
     #billing_postcode_field, #shipping_postcode_field{
-        width:32%;
+        width:100%;
         float:left;
     }
     
