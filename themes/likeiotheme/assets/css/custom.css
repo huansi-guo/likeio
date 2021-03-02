@@ -400,6 +400,7 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
     .page.woocommerce-checkout #order_review {
         grid-column: 2/3;
         grid-row: 1/2;
+        margin-top: 5rem;
         /* margin-top:6em; */
     }
     
