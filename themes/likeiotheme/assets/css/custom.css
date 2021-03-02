@@ -305,6 +305,10 @@ table.shop_table.shop_table_responsive.cart thead th {
     text-align: center;
 }
 
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width:200px;
+}
+
 
 /* .cart-collaterals .woocommerce-Price-amount.amount{
     color:#000000 !important;
