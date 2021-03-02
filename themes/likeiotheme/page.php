@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package E-commerce_Theme
+ * @package Likeio_Theme
  */
 
 get_header();
