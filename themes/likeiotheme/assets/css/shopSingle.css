@@ -15,9 +15,18 @@
     color:black !important;
 }
 
-.nav-links > .nav-next > a {
+.nav-links > .nav-next > a, .nav-links > .nav-previous>a {
     background-color: #ebe9eb;
     color: black;
     text-decoration: none;
     padding: 2rem;
+}
+
+.tagged_as > a, .posted_in >a {
+    background-color: #688783;
+    padding: 0.5rem;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+
 }
