@@ -110,3 +110,13 @@ h2.woocommerce-loop-product__title {
     font-weight: bolder;
     color:#480711;
 }
+
+/****styling for my account page*****/
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    width:100%;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation > ul {
+    display: flex;
+    justify-content: space-between;
+}
