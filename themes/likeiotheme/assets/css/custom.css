@@ -75,9 +75,13 @@ footer .site-info a, footer .site-info>div{
 }
 
 h4.text-center.postTitle {
-    color:red;
+    color:#480711;
     font-size:1.5rem;
     margin-top:0;
+}
+
+a.readMore {
+    color:#480711;
 }
 
 .exerptSection a {
