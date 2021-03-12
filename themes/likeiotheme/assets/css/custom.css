@@ -23,6 +23,12 @@ button.menu-toggle {
     background-color: white;
 }
 
+#site-navigation, .site-branding.navBar{
+    display: flex;
+    justify-content: center;
+}
+
+
 .main-navigation ul li a{
     color:black;
     font-size:20px;
