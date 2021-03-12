@@ -730,6 +730,7 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
     display: none;
 }
 
+/*********** styling for tablet viewport ************/
 @media only screen and (max-width:991px) {
     #checkout-cart-summary {
         display:block;
@@ -783,9 +784,24 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
         padding: 20px 10px 15px 10px;
     }
 
+    .wp-block-group.is-style-latest-collection-group>.wp-block-group__inner-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
 }
 
+/*********** styling for mobile viewport ************/
+
 @media only screen and (max-width:768px){
+    .wp-block-group.is-style-feature-bottom-banner-group>.wp-block-group__inner-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     #aside{
         display: none;
     }

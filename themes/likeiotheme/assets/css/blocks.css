@@ -102,4 +102,8 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    .wp-block-group.is-style-footer-promotion-banner-group>.wp-block-group__inner-container {
+        grid-template-columns: 1fr;
+    }
 }
