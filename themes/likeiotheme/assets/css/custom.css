@@ -26,9 +26,15 @@ button.menu-toggle {
 #site-navigation, .site-branding.navBar{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-
+#masthead {
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    display:flex;
+    align-items: center;
+}
 .main-navigation ul li a{
     color:black;
     font-size:20px;
@@ -91,7 +97,9 @@ header.grid-container {
 } */
 
 /******************************* styling for footer *****************************/
-
+#secondary-menu {
+    display:none;
+}
 .site-info>.cell,.site-info>.cell>a {
     text-decoration: none;
     color: darkgrey;
@@ -450,6 +458,10 @@ tr.cart-subtotal>th {
 ********************************************************************************************* */
 
 /*=======================major structural change=======================*/
+.wp-block-buttons {
+    display: flex;
+    justify-content: center;
+}
 
 #customer_details .col-1, #customer_details .col-2 {
     max-width: 100%;
