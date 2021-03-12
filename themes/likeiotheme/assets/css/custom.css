@@ -1,6 +1,9 @@
 body.home h1.entry-title {
     display:none;
 }
+
+/******************************* styling for header *****************************/
+
 header.entry-header {
     margin-left:1rem;
     margin-right:1rem;
@@ -10,6 +13,14 @@ header.entry-header {
 .main-navigation ul {
     display: flex;
     justify-content: space-around;
+}
+
+button.menu-toggle {
+    display:none;
+}
+
+#mega-menu-menu-primary {
+    background-color: white;
 }
 
 .main-navigation ul li a{
