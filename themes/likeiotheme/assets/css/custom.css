@@ -2,6 +2,10 @@ body.home h1.entry-title {
     display:none;
 }
 
+ul, ol {
+    margin:0;
+}
+
 /******************************* styling for header *****************************/
 
 header.entry-header {
