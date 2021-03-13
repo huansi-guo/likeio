@@ -93,17 +93,3 @@
 /* .wp-block-group.is-style-feature-banner-group figure {
     margin-bottom: -0.5rem;
 } */
-
-@media print, screen and (max-width: 40em) {
-    .wp-block-group.is-style-latest-collection-group>.wp-block-group__inner-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .wp-block-group.is-style-footer-promotion-banner-group>.wp-block-group__inner-container {
-        grid-template-columns: 1fr;
-    }
-}

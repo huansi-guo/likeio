@@ -792,11 +792,27 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
         padding-right: 2rem;
     }
 
+    .wp-block-group.is-style-left-image-right-texts>.wp-block-group__inner-container {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 /*********** styling for mobile viewport ************/
 
 @media only screen and (max-width:768px){
+    .wp-block-group.is-style-latest-collection-group>.wp-block-group__inner-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .wp-block-group.is-style-footer-promotion-banner-group>.wp-block-group__inner-container {
+        grid-template-columns: 1fr;
+    }
+
     .wp-block-group.is-style-feature-bottom-banner-group>.wp-block-group__inner-container {
         display:grid;
         grid-template-columns: 1fr 1fr;
