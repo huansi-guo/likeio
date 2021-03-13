@@ -801,6 +801,10 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
 /*********** styling for mobile viewport ************/
 
 @media only screen and (max-width:768px){
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width:100%;
+        text-align: center;
+    }
     .wp-block-group.is-style-latest-collection-group>.wp-block-group__inner-container {
         display: grid;
         grid-template-columns: 1fr;
