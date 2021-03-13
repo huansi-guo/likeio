@@ -19,7 +19,8 @@
     /* background-color: #ebe9eb; */
     color: black;
     text-decoration: none;
-    padding: 2rem;
+    text-decoration: underline;
+    /* padding: 2rem; */
 }
 
 .tagged_as > a, .posted_in >a {
@@ -28,5 +29,26 @@
     color:white;
     font-weight: bold;
     text-decoration: none;
+
+}
+
+.product_meta {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+/*********** styling for mobile viewport ************/
+
+@media only screen and (max-width:768px){
+    .center-aligned {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .center-aligned img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 
 }
