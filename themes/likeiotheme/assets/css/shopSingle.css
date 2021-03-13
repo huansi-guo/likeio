@@ -16,7 +16,7 @@
 }
 
 .nav-links > .nav-next > a, .nav-links > .nav-previous>a {
-    background-color: #ebe9eb;
+    /* background-color: #ebe9eb; */
     color: black;
     text-decoration: none;
     padding: 2rem;

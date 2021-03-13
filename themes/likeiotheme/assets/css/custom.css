@@ -43,7 +43,9 @@ button.menu-toggle {
 .menu-primary-menu-container {
     width:100%;
 }
-
+footer .site-info>a>img {
+    width:20%;
+}
 
 footer .site-info a, footer .site-info>div{
     text-align: center;
@@ -843,6 +845,10 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
     .closeFilter:hover {
         cursor: pointer;
     }
+
+    footer .site-info>a>img {
+        width:50%;
+    }
     
 
 }
@@ -851,4 +857,5 @@ form.checkout.woocommerce-checkout > ul.woocommerce-error {
         display: none;
     }
     
+
 }
