@@ -1,0 +1,4 @@
+2021-03-14T16:51:43+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/likeiotheme/single-likeio_sts.php on line 43
+
+2021-03-14T16:52:29+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /app/public/wp-content/themes/likeiotheme/single-likeio_sts.php on line 44
+
