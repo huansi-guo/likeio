@@ -17,7 +17,7 @@ get_header();
 				 * Custom WP_Query
 				 */
 				$args = array(
-					'post_type'      => 'likeio_smartlifes',
+					'post_type'      => 'likeio_sts',
 					'posts_per_page' => 6,
 				);
 

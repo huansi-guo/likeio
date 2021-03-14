@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="singleSmartLife content-area grid-container">
 	
-		<main id="main" class="site-main grid-x smartLifeSingle">
+		<main id="main" class="site-main grid-x smartingle">
 
 			<div class="cell large-1 medium-1"></div>
 
