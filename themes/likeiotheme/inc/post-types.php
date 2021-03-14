@@ -53,7 +53,7 @@ function likeiotheme_init_post_types() {
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
     );
 
-    register_post_type( 'likeio_Smartlifes', $args );
+    register_post_type( 'likeio_smartlifes', $args );
     
 }
 
